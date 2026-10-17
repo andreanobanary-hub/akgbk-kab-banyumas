@@ -1,0 +1,6 @@
+{
+  "name": "AKG-BK Banyumas - Asesmen Kebutuhan Guru BK",
+  "description": "Instrumen Asesmen Kebutuhan Guru Bimbingan dan Konseling (AKG-BK) Jenjang SMP/MTs se-Kabupaten Banyumas terintegrasi Google Sheets MGBK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
