@@ -77,7 +77,7 @@ export function generateWhatsAppSummary(formData: FormData, analysis: DomainAnal
   text += `━━━━━━━━━━━━━━━━━━━━━\n`;
   text += `👤 *Nama:* ${formData.nama_lengkap}\n`;
   text += `🏫 *Sekolah:* ${formData.asal_sekolah} (${formData.jenjang})\n`;
-  text += `📍 *Wilayah:* ${formData.sub_rayon_kecamatan}\n`;
+  text += `📍 *Sub Rayon:* ${formData.sub_rayon_kecamatan}\n`;
   text += `🎓 *Pendidikan:* ${formData.latar_pendidikan}\n\n`;
   text += `📊 *Rata-rata Skor per Domain (Skala 1-4):*\n`;
 

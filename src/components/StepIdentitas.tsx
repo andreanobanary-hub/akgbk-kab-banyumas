@@ -1,7 +1,7 @@
 import React from 'react';
 import { User, School, MapPin, Phone, GraduationCap, ArrowRight, Info, Building2 } from 'lucide-react';
 import { FormData, JenjangType, LatarPendidikanType } from '../types/akgbk';
-import { BANYUMAS_AREAS } from '../data/instrumentData';
+import { SUB_RAYON_OPTIONS } from '../data/instrumentData';
 
 interface StepIdentitasProps {
   formData: FormData;
@@ -27,7 +27,7 @@ export const StepIdentitas: React.FC<StepIdentitasProps> = ({
       return;
     }
     if (!formData.sub_rayon_kecamatan.trim()) {
-      setErrorMsg('Mohon pilih Sub Rayon / Kecamatan di Kabupaten Banyumas.');
+      setErrorMsg('Mohon pilih Sub Rayon Anda (Sub Rayon 1 s/d 7).');
       return;
     }
     if (!formData.no_whatsapp.trim()) {
@@ -144,10 +144,10 @@ export const StepIdentitas: React.FC<StepIdentitasProps> = ({
             </div>
           </div>
 
-          {/* Sub Rayon / Kecamatan */}
+          {/* Sub Rayon */}
           <div>
             <label className="block text-sm font-semibold text-slate-800 mb-1.5">
-              Sub Rayon / Wilayah Kecamatan di Banyumas <span className="text-rose-500">*</span>
+              Sub Rayon <span className="text-rose-500">*</span>
             </label>
             <div className="relative">
               <MapPin className="w-5 h-5 text-slate-400 absolute left-3.5 top-3.5 pointer-events-none" />
@@ -155,20 +155,17 @@ export const StepIdentitas: React.FC<StepIdentitasProps> = ({
                 value={formData.sub_rayon_kecamatan}
                 onChange={(e) => onChange('sub_rayon_kecamatan', e.target.value)}
                 required
-                className="w-full pl-11 pr-8 py-3 rounded-xl border border-slate-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 text-slate-900 text-sm bg-white transition-all appearance-none"
+                className="w-full pl-11 pr-8 py-3 rounded-xl border border-slate-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 text-slate-900 text-sm bg-white transition-all appearance-none cursor-pointer"
               >
-                <option value="">-- Pilih Sub Rayon & Kecamatan --</option>
-                {BANYUMAS_AREAS.map((area, idx) => (
-                  <option
-                    key={idx}
-                    value={`${area.subRayon} - Kec. ${area.kecamatan}`}
-                  >
-                    {area.subRayon} - Kec. {area.kecamatan}
+                <option value="">-- Pilih Sub Rayon --</option>
+                {SUB_RAYON_OPTIONS.map((subRayon) => (
+                  <option key={subRayon} value={subRayon}>
+                    {subRayon}
                   </option>
                 ))}
               </select>
             </div>
-            <p className="text-xs text-slate-400 mt-1">Mencakup 27 kecamatan se-Kabupaten Banyumas</p>
+            <p className="text-xs text-slate-400 mt-1">Pilihan Sub Rayon 1 sampai dengan Sub Rayon 7</p>
           </div>
 
           {/* No WhatsApp */}

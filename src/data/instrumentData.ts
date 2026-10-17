@@ -306,35 +306,16 @@ export const QUESTIONS: QuestionItem[] = [
   },
 ];
 
-// 27 Kecamatan di Kabupaten Banyumas dikelompokkan dalam Sub Rayon MGBK Banyumas
-export const BANYUMAS_AREAS = [
-  { subRayon: 'Sub Rayon 01 (Purwokerto Kota)', kecamatan: 'Purwokerto Barat' },
-  { subRayon: 'Sub Rayon 01 (Purwokerto Kota)', kecamatan: 'Purwokerto Timur' },
-  { subRayon: 'Sub Rayon 01 (Purwokerto Kota)', kecamatan: 'Purwokerto Selatan' },
-  { subRayon: 'Sub Rayon 01 (Purwokerto Kota)', kecamatan: 'Purwokerto Utara' },
-  { subRayon: 'Sub Rayon 02 (Sokaraja - Banyumas)', kecamatan: 'Sokaraja' },
-  { subRayon: 'Sub Rayon 02 (Sokaraja - Banyumas)', kecamatan: 'Kalibagor' },
-  { subRayon: 'Sub Rayon 02 (Sokaraja - Banyumas)', kecamatan: 'Banyumas' },
-  { subRayon: 'Sub Rayon 02 (Sokaraja - Banyumas)', kecamatan: 'Somagede' },
-  { subRayon: 'Sub Rayon 02 (Sokaraja - Banyumas)', kecamatan: 'Kembaran' },
-  { subRayon: 'Sub Rayon 03 (Banyumas Timur / Sumpiuh)', kecamatan: 'Sumpiuh' },
-  { subRayon: 'Sub Rayon 03 (Banyumas Timur / Sumpiuh)', kecamatan: 'Tambak' },
-  { subRayon: 'Sub Rayon 03 (Banyumas Timur / Sumpiuh)', kecamatan: 'Kemranjen' },
-  { subRayon: 'Sub Rayon 04 (Banyumas Selatan / Rawalo - Wangon)', kecamatan: 'Rawalo' },
-  { subRayon: 'Sub Rayon 04 (Banyumas Selatan / Rawalo - Wangon)', kecamatan: 'Kebasen' },
-  { subRayon: 'Sub Rayon 04 (Banyumas Selatan / Rawalo - Wangon)', kecamatan: 'Jatilawang' },
-  { subRayon: 'Sub Rayon 04 (Banyumas Selatan / Rawalo - Wangon)', kecamatan: 'Wangon' },
-  { subRayon: 'Sub Rayon 04 (Banyumas Selatan / Rawalo - Wangon)', kecamatan: 'Lumbir' },
-  { subRayon: 'Sub Rayon 05 (Banyumas Barat / Ajibarang)', kecamatan: 'Ajibarang' },
-  { subRayon: 'Sub Rayon 05 (Banyumas Barat / Ajibarang)', kecamatan: 'Pekuncen' },
-  { subRayon: 'Sub Rayon 05 (Banyumas Barat / Ajibarang)', kecamatan: 'Gumelar' },
-  { subRayon: 'Sub Rayon 05 (Banyumas Barat / Ajibarang)', kecamatan: 'Cilongok' },
-  { subRayon: 'Sub Rayon 06 (Banyumas Utara / Lereng Slamet)', kecamatan: 'Baturraden' },
-  { subRayon: 'Sub Rayon 06 (Banyumas Utara / Lereng Slamet)', kecamatan: 'Kedungbanteng' },
-  { subRayon: 'Sub Rayon 06 (Banyumas Utara / Lereng Slamet)', kecamatan: 'Karanglewas' },
-  { subRayon: 'Sub Rayon 06 (Banyumas Utara / Lereng Slamet)', kecamatan: 'Sumbang' },
-  { subRayon: 'Sub Rayon 06 (Banyumas Utara / Lereng Slamet)', kecamatan: 'Patikraja' },
-];
+// 7 Sub Rayon MGBK SMP/MTs Kabupaten Banyumas
+export const SUB_RAYON_OPTIONS = [
+  'Sub Rayon 1',
+  'Sub Rayon 2',
+  'Sub Rayon 3',
+  'Sub Rayon 4',
+  'Sub Rayon 5',
+  'Sub Rayon 6',
+  'Sub Rayon 7',
+] as const;
 
 export const TOP_RECOMMENDATION_MAPPINGS: Record<number, string[]> = {
   1: [

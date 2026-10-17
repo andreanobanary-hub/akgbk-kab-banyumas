@@ -195,7 +195,7 @@ export const StepRefleksi: React.FC<StepRefleksiProps> = ({
           <div className="flex items-start gap-2">
             <MapPin className="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5" />
             <div>
-              <div className="text-slate-400">Wilayah / Kontak:</div>
+              <div className="text-slate-400">Sub Rayon / Kontak:</div>
               <div className="font-bold text-slate-800">{formData.sub_rayon_kecamatan || '-'}</div>
               <div className="text-slate-500">WA: {formData.no_whatsapp || '-'}</div>
             </div>

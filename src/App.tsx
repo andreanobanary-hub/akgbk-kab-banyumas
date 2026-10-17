@@ -140,7 +140,7 @@ export default function App() {
       nip_nuptk: '198705122011012015',
       asal_sekolah: 'SMP Negeri 1 Purwokerto',
       jenjang: 'SMP',
-      sub_rayon_kecamatan: 'Sub Rayon 01 (Purwokerto Kota) - Kec. Purwokerto Barat',
+      sub_rayon_kecamatan: 'Sub Rayon 1',
       no_whatsapp: '081234567890',
       latar_pendidikan: 'S1 BK',
       skor_butir: sampleScores,

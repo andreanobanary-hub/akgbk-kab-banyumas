@@ -109,7 +109,7 @@ export const StepHasil: React.FC<StepHasilProps> = ({
               <div className="text-teal-300 text-[11px]">{formData.jenjang}</div>
             </div>
             <div>
-              <div className="text-teal-200">Sub Rayon / Kecamatan</div>
+              <div className="text-teal-200">Sub Rayon</div>
               <div className="font-bold text-white truncate">{formData.sub_rayon_kecamatan}</div>
             </div>
             <div>
